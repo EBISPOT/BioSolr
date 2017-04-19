@@ -14,3 +14,16 @@ bin/
 dependency-reduced-pom.xml
 
 .DS_Store
+
+# Ignore Solr data and library directories
+solr-conf/documents/data
+solr-conf/documents/lib
+
+# Any local files
+*_local.*
+
+# idea files
+.idea*
+
+# log files
+tools/logs
