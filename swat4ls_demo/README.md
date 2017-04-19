@@ -76,8 +76,8 @@ We can also inspect some of the data by browsing to the query page [http://local
 Next, we've supplied you with a simple web application to search our new Solr index.  Let's try running this.
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/tools
->: java -jar swat4ls-webapp-1.0-SNAPSHOT.jar server webapp.yml
+>: cd ~/Projects/BioSolr/tools
+>: java -jar webapp-1.0-SNAPSHOT.jar server webapp.yml
 ```
 
 You should see a bunch of logging information as the web application starts up. If all goes well, you'll eventually see a message like this:
@@ -115,7 +115,7 @@ Now we're going to try and improve our search results using the structure of the
 Before we start, let's shutdown our running Solr server
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/
+>: cd ~/Projects/BioSolr/
 >: solr_stop.sh
 ```
 
