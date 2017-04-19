@@ -147,7 +147,7 @@ You'll need to edit `solr-conf/documents/conf/solrconfig.xml`.  Scroll down to l
       <bool name="enabled">true</bool>
       <str name="annotationField">efo_uri</str>
 
-      <str name="olsBaseURL">http://www.ebi.ac.uk/ols/beta/api</str>
+      <str name="olsBaseURL">http://www.ebi.ac.uk/ols/api</str>
       <str name="olsOntology">efo</str>
     </processor>
     <processor class="solr.LogUpdateProcessorFactory" />
