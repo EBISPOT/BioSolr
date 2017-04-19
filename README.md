@@ -38,7 +38,7 @@ Now we're happy we can run Solr, so let's shut down our Solr server again...
 Check out the code for this demo into your preferred directory - we're going to be using `~/Projects/`:
 ```
 >: cd ~/Projects
->: git clone git@github.com:EBISPOT/BioSolr.git
+>: git clone https://github.com/EBISPOT/BioSolr.git
 ```
 
 We've supplied the required configuration to get us up and running quickly, so let's start a new Solr instance that uses this config:
