@@ -156,11 +156,11 @@ You'll need to edit `solr-conf/documents/conf/solrconfig.xml`.  Scroll down to l
   </updateRequestProcessorChain>
 ```
 
-Let's take a look at this in a bit of details.  We're setting up a processor chain called 'ontology' that uses the class `OntologyUpdateProcessorFactory` that has been developed as part of BioSolr.  We've told it to look for annotation in the 'efo_uri' field, and told it where the Ontology Lookup Service (OLS) is located.  We've also told it to use the ontology 'efo' from OLS.
+Let's take a look at this in a bit of detail.  We're setting up a processor chain called 'ontology' that uses the class `OntologyUpdateProcessorFactory` that has been developed as part of BioSolr.  We've told it to look for annotation in the 'efo_uri' field, and told it where the Ontology Lookup Service (OLS) is located.  We've also told it to use the ontology 'efo' from OLS.
 
 Now, we need to add this update request processor chain to our update request handler, so it is used whenever we update data.
 
-Still editing `solr-conf/documents/conf/solrconfig.xml`, scrool back up to line 431 and uncomment this block:
+Still editing `solr-conf/documents/conf/solrconfig.xml`, scroll back up to line 431 and uncomment this block:
 
 ```
   <requestHandler name="/update" class="solr.UpdateRequestHandler">
@@ -176,7 +176,7 @@ Still editing `solr-conf/documents/conf/solrconfig.xml`, scrool back up to line 
 
 Now we've reconfigured our server, we just have to restart...
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo
+>: cd ~/Projects/BioSolr/
 >: solr-start.sh
 ```
 
@@ -199,8 +199,8 @@ Now let's go back to our web application and see if we can take advantage of all
 
 Restart the application again:
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/tools
->: java -jar swat4ls-webapp-1.0-SNAPSHOT.jar server webapp.yml
+>: cd ~/Projects/BioSolr/tools
+>: java -jar webapp-1.0-SNAPSHOT.jar server webapp.yml
 ```
 You'll straight away notice something new - lots of additional checkboxes (you might need to reload your page).  These are present because our webapp has noticed that we have additional ontology fields in our data.
 
