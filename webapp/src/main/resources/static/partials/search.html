@@ -2,10 +2,20 @@
     <form ng-submit="search()" class="form-inline">
         <input type="text" ng-model="query" class="form-control" />
         <button type="submit" class="btn">Search</button>
-        <input type="checkbox" checklist-model="additionalFields" checklist-value="efo_child_labels" /> Include child labels
+		<br/>
+		<input type="checkbox" checklist-model="additionalFields" checklist-value="efo_synonyms" /> Include synonyms
+		<br/>
+		<input type="checkbox" checklist-model="additionalFields" checklist-value="efo_child_labels" /> Include child labels
+		<br/>
         <input type="checkbox" checklist-model="additionalFields" checklist-value="efo_parent_labels" /> Include parent labels
-        
-        <div ng-show="dynamicLabels">Include additional labels in search:
+		<br/>
+		<input type="checkbox" checklist-model="additionalFields" checklist-value="efo_descendant_labels" /> Include descendant labels
+		<br/>
+		<input type="checkbox" checklist-model="additionalFields" checklist-value="efo_ancestor_labels" /> Include ancestor labels
+
+
+
+		<div ng-show="dynamicLabels"><b>Include additional labels in search</b>:
             <span ng-repeat="label in dynamicLabels"><input type="checkbox" checklist-model="additionalFields" checklist-value="label" /> "{{formatRelatedType(label)}}" </span>
         </div>
     </form>

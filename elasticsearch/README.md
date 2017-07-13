@@ -55,7 +55,7 @@ Check out the code for this demo into your preferred directory - we're going to 
 ```
 >: cd ~/Projects
 >: git clone git@github.com:flaxsearch/BioSolr.git
->: cd BioSolr/swat4ls_demo/elasticsearch
+>: cd BioSolr/elasticsearch
 ```
 
 ## Part Two - Indexing some example data
@@ -70,7 +70,7 @@ Now let's index this data. We'll set some basic mappings, and use logstash
 to import our data file.
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/elasticsearch
+>: cd ~/Projects/BioSolr/elasticsearch
 >: curl -XPOST http://localhost:9200/biosolr -d @mapping_basic.json
 >: sh import_data.sh
 
@@ -93,8 +93,8 @@ correspond to rows in our spreadsheet.
 Next, we've supplied you with a simple web application to search our new Solr index.  Let's try running this.
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/tools
->: java -jar swat4ls-webapp-1.0-SNAPSHOT.jar server webapp_es.yml
+>: cd ~/Projects/BioSolr/tools
+>: java -jar webapp-1.0-SNAPSHOT.jar server webapp_es.yml
 ```
 
 You should see a bunch of logging information as the web application starts up. If all goes well, you'll eventually see a message like this:
@@ -136,7 +136,7 @@ in its terminal window to close it down.
 Now install the BioSolr plugin from the `plugins` directory.
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/plugins
+>: cd ~/Projects/BioSolr/plugins
 >: ~/Applications/elasticsearch-2.2.0/bin/plugin install file:///`pwd`/es-ontology-annotator-es2.2-0.1.zip
 ```
 
@@ -156,7 +156,7 @@ Now we'll use curl to clear the data set, and then update the ElasticSearch
 mappings so it recognizes that efo_uri is an ontology annotation.
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/elasticsearch
+>: cd ~/Projects/BioSolr/elasticsearch
 >: curl -XDELETE http://localhost:9200/biosolr
 >: curl -XPOST http://localhost:9200/biosolr -d @mapping_annotated.json
 ```
@@ -172,7 +172,7 @@ sub-properties defined, including label, synonyms, and so on.
 This bit is simple - we can just rerun our indexing process from earlier...
 
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/elasticsearch
+>: cd ~/Projects/BioSolr/elasticsearch
 >: sh import_data.sh
 
 ```
@@ -192,8 +192,8 @@ Now let's go back to our web application and see if we can take advantage of all
 
 Restart the application again:
 ```
->: cd ~/Projects/BioSolr/swat4ls_demo/tools
->: java -jar swat4ls-webapp-1.0-SNAPSHOT.jar server webapp_es.yml
+>: cd ~/Projects/BioSolr/tools
+>: java -jar webapp-1.0-SNAPSHOT.jar server webapp_es.yml
 ```
 You'll straight away notice something new - lots of additional checkboxes (you might need to reload your page).  These are present because our webapp has noticed that we have additional ontology fields in our data.
 

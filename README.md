@@ -123,7 +123,7 @@ Now, take the BioSolr plugin jar file out of the `plugins/` directory and copy i
 
 ```
 >: mkdir solr-conf/documents/lib
->: cp plugins/solr-ontology-update-processor-0.2.jar solr-conf/documents/lib/
+>: cp plugins/solr-ontology-update-processor-0.5.jar solr-conf/documents/lib/
 ```
 
 We've installed our plugin, but we need to do a bit of reconfiguration to make Solr use it.

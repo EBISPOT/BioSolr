@@ -49,8 +49,8 @@ public class SolrDocumentSearch extends SolrSearchEngine implements DocumentSear
 	private static final String TITLE_FIELD = "title";
 	private static final String FIRST_AUTHOR_FIELD = "first_author";
 	private static final String PUBLICATION_FIELD = "publication";
-	private static final String EFO_LABELS_FIELD = "efo_labels";
-	
+	private static final String EFO_LABELS_FIELD = "efo_uri_label_t";
+
 	private static final List<String> DEFAULT_SEARCH_FIELDS = new ArrayList<>();
 	static {
 		DEFAULT_SEARCH_FIELDS.add(TITLE_FIELD);

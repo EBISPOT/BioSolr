@@ -360,7 +360,7 @@
        <!-- Query settings -->
        <str name="defType">edismax</str>
        <str name="qf">
-          title first_author publication efo_labels
+          title first_author publication efo_uri_label_t
        </str>
        <str name="df">text</str>
        <str name="mm">75%</str>
@@ -378,7 +378,7 @@
        <!-- Query settings -->
        <str name="defType">edismax</str>
        <str name="qf">
-          title first_author publication efo_labels
+          title first_author publication efo_uri_label_t
        </str>
        <str name="df">text</str>
        <!--<str name="mm">75%</str>-->
@@ -430,7 +430,7 @@
          on each Update Request
       -->
        <lst name="defaults">
-           <!--   
+           <!--
          <str name="update.chain">ontology</str>
          -->
        </lst>
@@ -618,7 +618,7 @@
 
     --> 
   <!-- Ontology lookup processor chain -->
-  <!-- 
+  <!--
   <updateRequestProcessorChain name="ontology">
     <processor class="uk.co.flax.biosolr.solr.update.processor.OntologyUpdateProcessorFactory">
       <bool name="enabled">true</bool>
