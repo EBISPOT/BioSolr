@@ -126,6 +126,8 @@ Now, take the BioSolr plugin jar file out of the `plugins/` directory and copy i
 >: cp plugins/solr-ontology-update-processor-0.5.jar solr-conf/documents/lib/
 ```
 
+You can find the code of this plugin under the `ontology/ontology-annotator` directory.
+
 We've installed our plugin, but we need to do a bit of reconfiguration to make Solr use it.
 
 
