@@ -38,7 +38,7 @@ Now we're happy we can run Solr, so let's shut down our Solr server again...
 Check out the code for this demo into your preferred directory - we're going to be using `~/Projects/`:
 ```
 >: cd ~/Projects
->: git clone git@github.com:EBISPOT/BioSolr.git
+>: git clone https://github.com/EBISPOT/BioSolr.git
 ```
 
 We've supplied the required configuration to get us up and running quickly, so let's start a new Solr instance that uses this config:
@@ -149,7 +149,7 @@ You'll need to edit `solr-conf/documents/conf/solrconfig.xml`.  Scroll down to l
       <bool name="enabled">true</bool>
       <str name="annotationField">efo_uri</str>
 
-      <str name="olsBaseURL">http://www.ebi.ac.uk/ols/beta/api</str>
+      <str name="olsBaseURL">http://www.ebi.ac.uk/ols/api</str>
       <str name="olsOntology">efo</str>
     </processor>
     <processor class="solr.LogUpdateProcessorFactory" />
@@ -210,7 +210,7 @@ Now let's go back to our earlier searches.  If you remember, we tried looking fo
 
 Then, we tried `lung disease` and only got 3 results.  Again, we should be able to verify this. But now let's check the box to use ontology expansion:
 - [x] Include parent labels
-Now if we rerun the search, we should see 53 results, across a whole variety of lung disease.  Our top hit, for example, should look like this:
+Now if we rerun the search, we should see 53 results, across a whole variety of lung disease.  One of our hits, for example, should look like this:
 
 > 1.    **Variants in FAM13A are associated with chronic obstructive pulmonary disease.**  
 >       Cho MH - Nat Genet.  
@@ -236,7 +236,7 @@ If you look closely, you'll see that "lung" is not mentioned anywhere in our dat
 
 Next, we tried searching for `schizophrenia`.  Let's try this again - yep, still 51 results.  You'll notice if we include parent terms, we still get 51 results - our order might shuffle around a bit though. 
 This isn't unexpected - most of our data about schizophrenia should be nicely mapped to a specific term and would include the text "schizophrenia" in the title or the annotation line.
-But last time we tried to search for other `mental disorders` and found no results at all.  Now, if we search including child labels, we got 150 results! This covers a wide range of disorders, like "schizophrenia", "bipolar disorder" and many more.  For example:
+But last time we tried to search for other `mental disorder` and found no results at all.  Now, if we search including child and parent labels, we get more than 100 results! This covers a wide range of disorders, like "schizophrenia", "bipolar disorder" and many more.  For example:
 
 > 1.    **Cross-disorder genomewide analysis of schizophrenia, bipolar disorder, and depression.**  
 >       Huang J - Am J Psychiatry  
