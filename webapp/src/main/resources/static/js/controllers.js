@@ -22,8 +22,8 @@ ontologyApp
 		$scope.efo_child_labels = 'efo_uri_child_labels_t';
 		$scope.efo_parent_labels = 'efo_uri_parent_labels_t';
         $scope.efo_synonyms = 'efo_uri_synonyms_t';
-        $scope.efo_descendant_labels = 'efo_uri_descendants_labels_t';
-        $scope.efo_ancestor_labels = 'efo_uri_ancestors_labels_t';
+        $scope.efo_descendant_labels = 'efo_uri_descendant_labels_t';
+        $scope.efo_ancestor_labels = 'efo_uri_ancestor_labels_t';
 	};
 	
 	self.logError = function(errorMsg) {
