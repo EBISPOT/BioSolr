@@ -2,6 +2,8 @@
 
 This is a short interactive introduction to the BioSolr Ontology Expansion plugin for Solr.
 
+If you would like to use elasticsearch instead, please refer to the BioSolr tutorial for elastic search [here](https://github.com/EBISPOT/BioSolr/tree/master/elasticsearch)
+
 In this tutorial you will learn how to:
  
  * Install Solr
