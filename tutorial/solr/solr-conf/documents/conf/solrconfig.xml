@@ -430,9 +430,9 @@
          on each Update Request
       -->
        <lst name="defaults">
-           
+         <!--  
          <str name="update.chain">ontology</str>
-         
+         -->
        </lst>
   </requestHandler>
 
@@ -618,7 +618,7 @@
 
     --> 
   <!-- Ontology lookup processor chain -->
-  
+ <!-- 
   <updateRequestProcessorChain name="ontology">
     <processor class="uk.co.flax.biosolr.solr.update.processor.OntologyUpdateProcessorFactory">
       <bool name="enabled">true</bool>
@@ -631,7 +631,7 @@
     <processor class="solr.DistributedUpdateProcessorFactory" />
     <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>
-  
+  -->
 
 
   <!-- Response Writers
