@@ -55,12 +55,12 @@ Check out the code for this demo into your preferred directory - we're going to 
 ```
 >: cd ~/Projects
 >: git clone git@github.com:flaxsearch/BioSolr.git
->: cd BioSolr/elasticsearch
+>: cd BioSolr/tutorial/elasticsearch
 ```
 
 ## Part Two - Indexing some example data
 
-We've supplied some sample data to demonstrate how BioSolr can index information annotated with ontology terms. This data is stored in the file `data/gwas-catalog-annotation-data.csv` - you can open this file in Excel and take a look at it if you like. You'll see this file contains a column `efo_uri` which contains annotations to the Experimental Factor Ontology.
+We've supplied some sample data to demonstrate how BioSolr can index information annotated with ontology terms. This data is stored in the file `tutorial/data/gwas-catalog-annotation-data.csv` - you can open this file in Excel and take a look at it if you like. You'll see this file contains a column `efo_uri` which contains annotations to the Experimental Factor Ontology.
 
 *For reference:*
 **Data** is taken from the GWAS Catalog: http://www.ebi.ac.uk/gwas
@@ -70,7 +70,7 @@ Now let's index this data. We'll set some basic mappings, and use logstash
 to import our data file.
 
 ```
->: cd ~/Projects/BioSolr/elasticsearch
+>: cd ~/Projects/BioSolr/tutorial/elasticsearch
 >: curl -XPOST http://localhost:9200/biosolr -d @mapping_basic.json
 >: sh import_data.sh
 
@@ -93,7 +93,7 @@ correspond to rows in our spreadsheet.
 Next, we've supplied you with a simple web application to search our new Solr index.  Let's try running this.
 
 ```
->: cd ~/Projects/BioSolr/tools
+>: cd ~/Projects/BioSolr/tutorial/tools
 >: java -jar webapp-1.0-SNAPSHOT.jar server webapp_es.yml
 ```
 
@@ -136,10 +136,12 @@ in its terminal window to close it down.
 Now install the BioSolr plugin from the `plugins` directory.
 
 ```
->: cd ~/Projects/BioSolr/plugins
+>: cd ~/Projects/BioSolr/tutorial/plugins
 >: ~/Applications/elasticsearch-2.2.0/bin/plugin install file:///`pwd`/es-ontology-annotator-es2.2-0.1.zip
 ```
 
+You can find the code for this plugin under the `BioSolr/ontology/ontology-annotator` directory.
+ 
 We've installed our plugin, now we need to tell ElasticSearch when to use it.
 
 
@@ -156,7 +158,7 @@ Now we'll use curl to clear the data set, and then update the ElasticSearch
 mappings so it recognizes that efo_uri is an ontology annotation.
 
 ```
->: cd ~/Projects/BioSolr/elasticsearch
+>: cd ~/Projects/BioSolr/tutorial/elasticsearch
 >: curl -XDELETE http://localhost:9200/biosolr
 >: curl -XPOST http://localhost:9200/biosolr -d @mapping_annotated.json
 ```
@@ -172,7 +174,7 @@ sub-properties defined, including label, synonyms, and so on.
 This bit is simple - we can just rerun our indexing process from earlier...
 
 ```
->: cd ~/Projects/BioSolr/elasticsearch
+>: cd ~/Projects/BioSolr/tutorial/elasticsearch
 >: sh import_data.sh
 
 ```
@@ -192,7 +194,7 @@ Now let's go back to our web application and see if we can take advantage of all
 
 Restart the application again:
 ```
->: cd ~/Projects/BioSolr/tools
+>: cd ~/Projects/BioSolr/tutorial/tools
 >: java -jar webapp-1.0-SNAPSHOT.jar server webapp_es.yml
 ```
 You'll straight away notice something new - lots of additional checkboxes (you might need to reload your page).  These are present because our webapp has noticed that we have additional ontology fields in our data.
