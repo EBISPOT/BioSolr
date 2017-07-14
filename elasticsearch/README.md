@@ -1,4 +1,4 @@
-# SWAT4LS BioSolr Demo
+# BioSolr Demo
 
 This is a short interactive introduction to the BioSolr Ontology Expansion plugin for ElasticSearch.
 
