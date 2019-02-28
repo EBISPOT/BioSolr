@@ -47,7 +47,7 @@ We've supplied the required configuration to get us up and running quickly, so l
 ```
 >: cd ~/Projects/BioSolr/tutorial/solr
 >: export SOLR_DIR=~/Applications/solr-5.3.1
->: solr-start.sh
+>: solr_start.sh
 ```
 
 Now reload your page at [http://localhost:8983/](http://localhost:8983/) - this time, you should see a new documents core.  If so, great! Now we're ready to start indexing some data.
@@ -181,7 +181,7 @@ Still editing `solr-conf/documents/conf/solrconfig.xml`, scroll back up to line 
 Now we've reconfigured our server, we just have to restart...
 ```
 >: cd ~/Projects/BioSolr/tutorial/solr/
->: solr-start.sh
+>: solr_start.sh
 ```
 
 ## Part Six - Reindex our data to take advantage of ontology enrichment
