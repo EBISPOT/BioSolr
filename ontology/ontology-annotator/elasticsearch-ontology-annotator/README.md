@@ -23,6 +23,9 @@ ElasticSearch versions 2.0.x
 - **es-ontology-annotator-es2.1** - this version works with
 ElasticSearch versions 2.1.x
 
+- **es-ontology-annotator-es7.6** - this version works with
+ElasticSearch versions 7.6.x
+
 
 ## Installation
 
