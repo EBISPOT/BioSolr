@@ -29,6 +29,7 @@
 		<module>es-ontology-annotator-es2.0</module>
 		<module>es-ontology-annotator-es2.1</module>
 		<module>es-ontology-annotator-es2.2</module>
+		<module>es-ontology-annotator-es7.6</module>
 	</modules>
 
 	<build>
