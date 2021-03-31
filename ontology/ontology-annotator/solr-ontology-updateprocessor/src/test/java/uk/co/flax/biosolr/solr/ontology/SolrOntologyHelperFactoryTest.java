@@ -48,7 +48,7 @@ public class SolrOntologyHelperFactoryTest {
 	@Test
 	public void construct_missingOLSOntology() throws Exception {
 		Map<String, String> paramMap = new HashMap<>();
-		paramMap.put(SolrOntologyHelperFactory.OLS_BASE_URL, "http://www.ebi.ac.uk/ols/beta/api");
+		paramMap.put(SolrOntologyHelperFactory.OLS_BASE_URL, "https://www.ebi.ac.uk/ols/api");
 		SolrOntologyHelperFactory factory = new SolrOntologyHelperFactory(new MapSolrParams(paramMap));
 		OntologyHelper helper = factory.buildOntologyHelper();
 		assertTrue(helper instanceof OLSTermsOntologyHelper);
@@ -64,7 +64,7 @@ public class SolrOntologyHelperFactoryTest {
 	@Test
 	public void buildOntologyHelper_ols() throws Exception {
 		Map<String, String> paramMap = new HashMap<>();
-		paramMap.put(SolrOntologyHelperFactory.OLS_BASE_URL, "http://www.ebi.ac.uk/ols/beta/api");
+		paramMap.put(SolrOntologyHelperFactory.OLS_BASE_URL, "https://www.ebi.ac.uk/ols/api");
 		paramMap.put(SolrOntologyHelperFactory.OLS_ONTOLOGY_NAME, "efo");
 		SolrOntologyHelperFactory factory = new SolrOntologyHelperFactory(new MapSolrParams(paramMap));
 		OntologyHelper helper = factory.buildOntologyHelper();

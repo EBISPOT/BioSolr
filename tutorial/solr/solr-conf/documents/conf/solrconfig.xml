@@ -430,9 +430,7 @@
          on each Update Request
       -->
        <lst name="defaults">
-         <!--  
          <str name="update.chain">ontology</str>
-         -->
        </lst>
   </requestHandler>
 
@@ -618,20 +616,18 @@
 
     --> 
   <!-- Ontology lookup processor chain -->
- <!-- 
   <updateRequestProcessorChain name="ontology">
     <processor class="uk.co.flax.biosolr.solr.update.processor.OntologyUpdateProcessorFactory">
       <bool name="enabled">true</bool>
       <str name="annotationField">efo_uri</str>
 
-      <str name="olsBaseURL">http://www.ebi.ac.uk/ols/api</str>
+      <str name="olsBaseURL">https://www.ebi.ac.uk/ols/api</str>
       <str name="olsOntology">efo</str>
     </processor>
     <processor class="solr.LogUpdateProcessorFactory" />
     <processor class="solr.DistributedUpdateProcessorFactory" />
     <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>
-  -->
 
 
   <!-- Response Writers
