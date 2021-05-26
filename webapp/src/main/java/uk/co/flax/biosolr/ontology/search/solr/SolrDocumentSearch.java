@@ -64,7 +64,7 @@ public class SolrDocumentSearch extends SolrSearchEngine implements DocumentSear
 
 	public SolrDocumentSearch(SolrConfiguration config) {
 		this.config = config;
-		this.server = new HttpSolrClient(config.getDocumentUrl());
+		this.server = new HttpSolrClient.Builder(config.getDocumentUrl()).build();
 	}
 
 	@Override
