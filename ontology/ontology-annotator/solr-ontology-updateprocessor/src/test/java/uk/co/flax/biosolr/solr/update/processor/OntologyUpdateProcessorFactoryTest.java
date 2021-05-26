@@ -121,19 +121,4 @@ public abstract class OntologyUpdateProcessorFactoryTest extends SolrTestCaseJ4 
 				"//arr[@name='annotation_uri_definition_t']/str[1][.='An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change.']");
 	}
 
-	static void addDoc(String doc, String chain) throws Exception {
-		Map<String, String[]> params = new HashMap<>();
-		MultiMapSolrParams mmparams = new MultiMapSolrParams(params);
-		params.put(UpdateParams.UPDATE_CHAIN, new String[] { chain });
-		SolrQueryRequestBase req = new SolrQueryRequestBase(h.getCore(), mmparams) {
-		};
-
-		UpdateRequestHandler handler = new UpdateRequestHandler();
-		handler.init(null);
-		ArrayList<ContentStream> streams = new ArrayList<>(2);
-		streams.add(new ContentStreamBase.StringStream(doc));
-		req.setContentStreams(streams);
-		handler.handleRequestBody(req, new SolrQueryResponse());
-		req.close();
-	}
 }
