@@ -28,7 +28,7 @@ public class OLSOntologyUpdateProcessorFactoryTest extends OntologyUpdateProcess
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		// Initialise a single Solr core
-		initCore("solrconfig.xml", "schema.xml", "ontologyUpdate/solr", "olsdocuments");
+		initCore("solrconfig.xml", "schema.xml", "src/test/resources/ontologyUpdate/solr", "olsdocuments");
 	}
 
 }

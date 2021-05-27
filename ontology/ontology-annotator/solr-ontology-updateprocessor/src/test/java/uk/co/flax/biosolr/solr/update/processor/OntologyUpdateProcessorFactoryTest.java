@@ -39,7 +39,8 @@ public abstract class OntologyUpdateProcessorFactoryTest extends SolrTestCaseJ4 
 
 	static final String TEST_IRI = "http://www.ebi.ac.uk/efo/EFO_0000001";
 	static final String ONTOLOGY_UPDATE_CHAIN = "ontology";
-	static final String TEST_CHILD_IRI = "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity";
+//	static final String TEST_CHILD_IRI = "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity";
+	static final String TEST_CHILD_IRI = "http://purl.obolibrary.org/obo/BFO_0000040";
 
 	static void checkNumDocs(int n) {
 		SolrQueryRequest req = req();
@@ -79,8 +80,8 @@ public abstract class OntologyUpdateProcessorFactoryTest extends SolrTestCaseJ4 
 
 		SolrQueryRequest req = req("id:1");
 		assertQ("Could not find child", req, "//result[@numFound=1]",
-				"//arr[@name='annotation_uri_child_uris_s']/str[1][.='" + TEST_CHILD_IRI + "']",
-		"//arr[@name='annotation_uri_child_labels_t']/str[1][.='material entity']");
+				"//arr[@name='annotation_uri_child_uris_s']/str[2][.='" + TEST_CHILD_IRI + "']",
+		"//arr[@name='annotation_uri_child_labels_t']/str[2][.='material entity']");
 	}
 
 	@Test
@@ -120,19 +121,4 @@ public abstract class OntologyUpdateProcessorFactoryTest extends SolrTestCaseJ4 
 				"//arr[@name='annotation_uri_definition_t']/str[1][.='An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change.']");
 	}
 
-	static void addDoc(String doc, String chain) throws Exception {
-		Map<String, String[]> params = new HashMap<>();
-		MultiMapSolrParams mmparams = new MultiMapSolrParams(params);
-		params.put(UpdateParams.UPDATE_CHAIN, new String[] { chain });
-		SolrQueryRequestBase req = new SolrQueryRequestBase(h.getCore(), mmparams) {
-		};
-
-		UpdateRequestHandler handler = new UpdateRequestHandler();
-		handler.init(null);
-		ArrayList<ContentStream> streams = new ArrayList<>(2);
-		streams.add(new ContentStreamBase.StringStream(doc));
-		req.setContentStreams(streams);
-		handler.handleRequestBody(req, new SolrQueryResponse());
-		req.close();
-	}
 }

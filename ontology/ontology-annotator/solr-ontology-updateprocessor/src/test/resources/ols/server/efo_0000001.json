@@ -22,16 +22,16 @@
   "obo_id" : "EFO:0000001",
   "_links" : {
     "self" : {
-      "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001"
+      "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001"
     },
     "children" : {
-      "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001/children"
+      "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001/children"
     },
     "descendants" : {
-      "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001/descendants"
+      "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001/descendants"
     },
     "graph" : {
-      "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001/graph"
+      "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000001/graph"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "_links" : {
     "self" : {
-      "href" : "http://www.ebi.ac.uk/ols/beta/api/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305"
+      "href" : "http://www.ebi.ac.uk/ols/api/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305"
     }
   },
   "_embedded" : {
@@ -31,25 +31,25 @@
       "obo_id" : "EFO:0000305",
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ebi.ac.uk%252Fefo%252FEFO_0000305/graph"
         }
       }
     } ]

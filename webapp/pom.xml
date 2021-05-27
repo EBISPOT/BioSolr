@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <solr.version>5.3.1</solr.version>
+        <solr.version>8.8.2</solr.version>
         <dropwizard.version>0.9.1</dropwizard.version>
         <dropwizard-elasticsearch.version>0.9.1-1</dropwizard-elasticsearch.version>
         <angularjs.version>1.4.7</angularjs.version>

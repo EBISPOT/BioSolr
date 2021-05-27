@@ -16,7 +16,9 @@
 
 package uk.co.flax.biosolr.solr.update.processor;
 
+import io.netty.util.concurrent.DefaultThreadFactory;
 import org.apache.commons.lang.StringUtils;
+import org.apache.lucene.util.NamedThreadFactory;
 import org.apache.solr.common.SolrException;
 import org.apache.solr.common.SolrException.ErrorCode;
 import org.apache.solr.common.SolrInputDocument;
@@ -30,7 +32,6 @@ import org.apache.solr.schema.SchemaField;
 import org.apache.solr.update.AddUpdateCommand;
 import org.apache.solr.update.processor.UpdateRequestProcessor;
 import org.apache.solr.update.processor.UpdateRequestProcessorFactory;
-import org.apache.solr.util.DefaultSolrThreadFactory;
 import org.apache.solr.util.plugin.SolrCoreAware;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -267,7 +268,7 @@ public class OntologyUpdateProcessorFactory extends UpdateRequestProcessorFactor
 	}
 
 	private void initialiseOntologyCheckScheduler(SolrCore core) {
-		executor = new ScheduledThreadPoolExecutor(1, new DefaultSolrThreadFactory("ontologyUpdate"),
+		executor = new ScheduledThreadPoolExecutor(1, new DefaultThreadFactory("ontologyUpdate"),
 				(Runnable r, ThreadPoolExecutor e) ->
 						LOGGER.warn("Skipping execution of '{}' using '{}'", r, e)
 		);

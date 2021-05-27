@@ -1,7 +1,7 @@
 {
   "_links" : {
     "self" : {
-      "href" : "http://www.ebi.ac.uk/ols/beta/api/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+      "href" : "http://www.ebi.ac.uk/ols/api/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
     }
   },
   "_embedded" : {
@@ -22,16 +22,16 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/aero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -53,25 +53,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/cheminf/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -98,25 +98,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -138,25 +138,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/epo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -178,25 +178,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/ero/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -216,25 +216,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/gaz/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -256,25 +256,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/geo/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -296,25 +296,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/mirnao/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -336,25 +336,25 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/opl/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"
         }
       }
     }, {
@@ -376,22 +376,22 @@
       "obo_id" : null,
       "_links" : {
         "self" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity"
         },
         "parents" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/parents"
         },
         "ancestors" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/ancestors"
         },
         "jstree" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/jstree"
         },
         "children" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/children"
         },
         "descendants" : {
-          "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
+          "href" : "http://www.ebi.ac.uk/ols/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/descendants"
         },
         "graph" : {
           "href" : "http://www.ebi.ac.uk/ols/beta/api/ontologies/pco/terms/http%253A%252F%252Fwww.ifomis.org%252Fbfo%252F1.1%252Fsnap%2523MaterialEntity/graph"

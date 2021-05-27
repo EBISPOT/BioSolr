@@ -51,6 +51,19 @@
     </owl:Class>
 	
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a material entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
+        <efo:example_of_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heart, a human, a fly, a microarray.</efo:example_of_usage>
+        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</efo:definition>
+        <efo:source_definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</efo:source_definition>
+        <efo:definition_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</efo:definition_editor>
+        <efo:EFO_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO_0001434</efo:EFO_URI>
+        <efo:ArrayExpress_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample factor</efo:ArrayExpress_label>
+        <efo:organizational_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</efo:organizational_class>
+        <efo:alternative_term>material type</efo:alternative_term>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
         <efo:example_of_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heart, a human, a fly, a microarray.</efo:example_of_usage>

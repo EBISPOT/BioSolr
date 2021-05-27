@@ -104,7 +104,7 @@ public abstract class SolrSearchEngine implements SearchEngine {
 		} else {
 			queryUrl.append(query.getRequestHandler());
 		}
-		queryUrl.append(ClientUtils.toQueryString(query, false));
+		queryUrl.append(query.toQueryString());
 
 		return queryUrl.toString();
 	}

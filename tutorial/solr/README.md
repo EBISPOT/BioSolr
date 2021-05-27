@@ -15,39 +15,39 @@ In this tutorial you will learn how to:
 
 ## Prerequisites
 
- * Java 8 - both Solr and the example web application rely on Java 8 to run.
+ * Java 8+ - both Solr and the example web application rely on Java 8 to run.
  
 ## Part One - Installing Solr
 
-Download Solr from http://lucene.apache.org/solr/ (Pick .tgz or .zip file as you prefer)
+Download Solr from https://solr.apache.org/downloads.html (Pick .tgz or .zip file as you prefer)
 
-Unpack the Solr download into your preferred directory - for this demo, we're going to use `~/Applications/solr-5.3.1/`
+Unpack the Solr download into your preferred directory - for this demo, we're going to use `~/Applications/solr-8.8.2/`
     
 Once you've done this, verify you can startup Solr:
-```
->: cd ~/Applications/solr-5.3.1/
->: bin/solr start
+```shell
+cd ~/Applications/solr-8.8.2/
+bin/solr start
 ```
 
 Now open a browser and check we can see the Solr admin page at [http://localhost:8983/](http://localhost:8983/)
 
 Now we're happy we can run Solr, so let's shut down our Solr server again...
-```
->: bin/solr stop
+```shell
+bin/solr stop
 ```
 ...and now get the extra BioSolr stuff.  We'll be using this later in the tutorial
 
 Check out the code for this demo into your preferred directory - we're going to be using `~/Projects/`:
-```
->: cd ~/Projects
->: git clone https://github.com/EBISPOT/BioSolr.git
+```shell
+cd ~/Projects
+git clone https://github.com/EBISPOT/BioSolr.git
 ```
 
 We've supplied the required configuration to get us up and running quickly, so let's start a new Solr instance that uses this config:
-```
->: cd ~/Projects/BioSolr/tutorial/solr
->: export SOLR_DIR=~/Applications/solr-5.3.1
->: solr_start.sh
+```shell
+cd ~/Projects/BioSolr/tutorial/solr
+export SOLR_DIR=~/Applications/solr-8.8.2
+solr_start.sh
 ```
 
 Now reload your page at [http://localhost:8983/](http://localhost:8983/) - this time, you should see a new documents core.  If so, great! Now we're ready to start indexing some data.
@@ -62,9 +62,9 @@ We've supplied some sample data to demonstrate how BioSolr can index information
 
 Now let's index this data.  You can upload CSV files directly to Solr using curl:
 
-```
->: curl http://localhost:8983/solr/documents/update --data-binary @../data/gwas-catalog-annotation-data.csv -H 'Content-type:application/csv'
->: curl http://localhost:8983/solr/documents/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
+```shell
+curl http://localhost:8983/solr/documents/update --data-binary @../data/gwas-catalog-annotation-data.csv -H 'Content-type:application/csv'
+curl http://localhost:8983/solr/documents/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
 ```
 
 The first command here uploads the data, the second one commits the changes and makes your newly indexed documents visible.
@@ -77,9 +77,9 @@ We can also inspect some of the data by browsing to the query page [http://local
 
 Next, we've supplied you with a simple web application to search our new Solr index.  Let's try running this.
 
-```
->: cd ~/Projects/BioSolr/tutorial/tools
->: java -jar webapp-1.0-SNAPSHOT.jar server webapp.yml
+```shell
+cd ~/Projects/BioSolr/tutorial/tools
+java -jar webapp-1.0-SNAPSHOT.jar server webapp.yml
 ```
 
 You should see a bunch of logging information as the web application starts up. If all goes well, you'll eventually see a message like this:
@@ -116,16 +116,16 @@ Now we're going to try and improve our search results using the structure of the
 
 Before we start, let's shutdown our running Solr server
 
-```
->: cd ~/Projects/BioSolr/tutorial/solr/
->: solr_stop.sh
+```shell
+cd ~/Projects/BioSolr/tutorial/solr/
+solr_stop.sh
 ```
 
 Now, take the BioSolr plugin jar file out of the `plugins/` directory and copy it into our Solr setup.
 
-```
->: mkdir solr-conf/documents/lib
->: cp ../plugins/solr-ontology-update-processor-0.5.jar solr-conf/documents/lib/
+```shell
+mkdir solr-conf/documents/lib
+cp ../plugins/solr-ontology-update-processor-0.5.jar solr-conf/documents/lib/
 ```
 
 You can find the code of this plugin under the `BioSolr/ontology/ontology-annotator` directory.
@@ -143,7 +143,7 @@ We need to add our plugin - an OntologyUpdateProcessor - to our default processo
 
 You'll need to edit `solr-conf/documents/conf/solrconfig.xml`.  Scroll down to line 619 and uncomment this block:
 
-```
+```xml
   <!-- Ontology lookup processor chain -->
 
   <updateRequestProcessorChain name="ontology">
@@ -166,7 +166,7 @@ Now, we need to add this update request processor chain to our update request ha
 
 Still editing `solr-conf/documents/conf/solrconfig.xml`, scroll back up to line 431 and uncomment this block:
 
-```
+```xml
   <requestHandler name="/update" class="solr.UpdateRequestHandler">
     <!-- See below for information on defining
          updateRequestProcessorChains that can be used by name
@@ -179,18 +179,18 @@ Still editing `solr-conf/documents/conf/solrconfig.xml`, scroll back up to line 
 ```
 
 Now we've reconfigured our server, we just have to restart...
-```
->: cd ~/Projects/BioSolr/tutorial/solr/
->: solr_start.sh
+```shell
+cd ~/Projects/BioSolr/tutorial/solr/
+solr_start.sh
 ```
 
 ## Part Six - Reindex our data to take advantage of ontology enrichment
 
 This bit is simple - we can just rerun our indexing process from earlier...
 
-```
->: curl http://localhost:8983/solr/documents/update --data-binary @../data/gwas-catalog-annotation-data.csv -H 'Content-type:application/csv'
->: curl http://localhost:8983/solr/documents/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
+```shell
+curl http://localhost:8983/solr/documents/update --data-binary @../data/gwas-catalog-annotation-data.csv -H 'Content-type:application/csv'
+curl http://localhost:8983/solr/documents/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'
 ```
 
 You'll notice this takes a while longer than it did earlier - this is because this time, as we index our data we're calling out to OLS to expand our data using the ontology.  Hopefully network access is up to it!
@@ -202,9 +202,9 @@ If you open the Solr admin interface again [http://localhost:8983/solr/#/documen
 Now let's go back to our web application and see if we can take advantage of all this extra information.
 
 Restart the application again:
-```
->: cd ~/Projects/BioSolr/tutorial/tools
->: java -jar webapp-1.0-SNAPSHOT.jar server webapp.yml
+```shell
+cd ~/Projects/BioSolr/tutorial/tools
+java -jar webapp-1.0-SNAPSHOT.jar server webapp.yml
 ```
 You'll straight away notice something new - lots of additional checkboxes (you might need to reload your page).  These are present because our webapp has noticed that we have additional ontology fields in our data.
 
